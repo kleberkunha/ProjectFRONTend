@@ -63,6 +63,202 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 /*====================================================*/
+/*====================================================*/
+/*====================================================*/
+/*INDEX*/
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/*BOTOES*/
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+@keyframes example1 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:0px; top:200px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:300px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+@keyframes example2 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:0px; top:300px;}
+  50%  {background-color:blue; right:500px; top:450px;}
+  75%  {background-color:green; right:650px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+@keyframes example3 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:0px; top:550px;}
+  50%  {background-color:blue; right:700px; top:900px;}
+  75%  {background-color:green; left:450px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+@keyframes example4 {
+  0%   {background-color:red; right:0px; top:0px;}
+  25%  {background-color:yellow; right:0px; top:350px;}
+  50%  {background-color:blue; right:250px; top:900px;}
+  75%  {background-color:green; right:300px; top:0px;}
+  100% {background-color:red; right:0px; top:0px;}
+}
+@keyframes example5 {
+  0%   {background-color:red; right:0px; top:0px;}
+  25%  {background-color:yellow; right:100px; top:150px;}
+  50%  {background-color:blue; right:-590px; top:400px;}
+  75%  {background-color:green; right:400px; top:600px;}
+  100% {background-color:red; right:0px; top:0px;}
+}
+@keyframes example6 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:500px; top:300px;}
+  50%  {background-color:blue; right:-500px; top:900px;}
+  75%  {background-color:green; right:-250px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+@keyframes example7 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:-550px; top:600px;}
+  50%  {background-color:blue; right:500px; top:700px;}
+  75%  {background-color:green; right:-250px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+@keyframes example8 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; right:450px; top:600px;}
+  50%  {background-color:blue; right:-600px; top:300px;}
+  75%  {background-color:green; right:-350px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.index-buttons .btn-1{
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.index-buttons .btn-2{
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.index-buttons .btn-3{
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.index-buttons .btn-4{
+  animation-name: example4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.index-buttons .btn-5{
+  animation-name: example5;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.index-buttons .btn-6{
+  animation-name: example6;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.index-buttons .btn-7{
+  animation-name: example7;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.index-buttons .btn-8{
+  animation-name: example8;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+.body-index{
+  background-image: url('https://wallpaperaccess.com/full/1307152.jpg');
+}
+
+.index-buttons button a{
+  text-decoration: none;
+  color: white;
+}
+
+#warning-xD{
+  border:1px solid yellow;
+  display: flex;
+  color: yellow;
+  justify-content: center;
+  background-color: blue
+}
+
+/*BOTOES*/
+
+
+
+/*INDEX*/
+/*====================================================*/
+/*====================================================*/
+/*====================================================*/
 /*FOOTER*/
 .footer{
   display: flex;
@@ -111,7 +307,7 @@ body {
 }
 
 .supreme-container{
-  width: 1200px;
+  width: 100%;
 }
 #card-cont-1{
   margin-left: 420px;
@@ -363,6 +559,15 @@ body {
   width: 100px;
 
 }
+/*LIST-EVENTS-CARD*/
+.event-present-card{
+  display:flex;
+  justify-content: center;
+}
+
+/*LIST-EVENTS-CARD*/
+
+
 
 /*!-------fin ajouté------*/
 
