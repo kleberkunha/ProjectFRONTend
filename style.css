@@ -148,7 +148,7 @@ body {
   border: 1px solid white;
   margin-top: 100px;
   width: 1100px;
-  height: 1000px;
+  height: auto;
   border-radius: 10px;
 }
 .grid-container {
@@ -162,6 +162,9 @@ body {
 .item1{
   grid-column-start: 1;
   grid-column-end: 8;
+  background-image: url('https://data.1freewallpapers.com/download/astronaut-colourful-background-4k-1920x1080.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 .item2{
   grid-column-start: 8;
@@ -171,12 +174,141 @@ body {
 .item3{
   grid-column-start: 1;
   grid-column-end: 13;
-  height: 150px
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
 }
-#bg-top{
+#btn-tickets{
+  width: 450px;
+}
+#dw-btn{
+  width: 642px;
+}
+.item4{
+  grid-column-start: 1;
+  grid-column-end: 8;
+  height: 400px
+}
+.item5{
+  grid-column-start: 8;
+  grid-column-end: 13;
+  height: 400px
+}
+.item6{
+  grid-column-start: 2;
+  grid-column-end: 13;
+  height: 100px
+}
+.item7{
+  grid-column-start: 2;
+  grid-column-end: 8;
+  height: 100px;
+  display: flex;
+
+}
+.item7 ul li a{
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+}
+.item7 ul{
+  list-style: none;
+  display: flex;
+  margin-top: 30px;
   padding: 0px;
+  
 }
 
+.item8{
+  grid-column-start: 2;
+  grid-column-end: 8;
+  height: 100px;
+}
+.item9{
+  grid-column-start: 1;
+  grid-column-end: 13;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.grid-9{
+  margin-top: 50px;
+
+}
+.box-item-9{
+  display: flex;
+  text-align: center;
+}
+.grid-9-1{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.item10{
+  grid-column-start: 1;
+  grid-column-end: 13;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+#box-item10{
+  border: 1px solid yellow;
+  width: 800px;
+}
+
+.download-ico{
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+/*SOCIAL LINKS*/
+
+
+.item20{
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+.item21{
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.item22{
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.item23{
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.item24{
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+
+
+
+.fa {
+  padding: 10px;
+  font-size: 31px;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+/*SOCIAL LINKS*/
 
 
 
